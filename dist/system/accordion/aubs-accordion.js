@@ -1,9 +1,9 @@
 "use strict";
 
-System.register(["aurelia-framework", "../utils/bootstrap-options"], function (_export, _context) {
+System.register(["aurelia-pal", "aurelia-framework", "../utils/bootstrap-options"], function (_export, _context) {
     "use strict";
 
-    var children, bindable, BindingEngine, inject, bootstrapOptions, _dec, _dec2, _class, _desc, _value, _class2, _descriptor, _descriptor2, AubsAccordionCustomElement;
+    var PLATFORM, children, bindable, BindingEngine, inject, useView, bootstrapOptions, _dec, _dec2, _dec3, _class, _desc, _value, _class2, _descriptor, _descriptor2, AubsAccordionCustomElement;
 
     function _initDefineProp(target, property, descriptor, context) {
         if (!descriptor) return;
@@ -55,16 +55,19 @@ System.register(["aurelia-framework", "../utils/bootstrap-options"], function (_
     }
 
     return {
-        setters: [function (_aureliaFramework) {
+        setters: [function (_aureliaPal) {
+            PLATFORM = _aureliaPal.PLATFORM;
+        }, function (_aureliaFramework) {
             children = _aureliaFramework.children;
             bindable = _aureliaFramework.bindable;
             BindingEngine = _aureliaFramework.BindingEngine;
             inject = _aureliaFramework.inject;
+            useView = _aureliaFramework.useView;
         }, function (_utilsBootstrapOptions) {
             bootstrapOptions = _utilsBootstrapOptions.bootstrapOptions;
         }],
         execute: function () {
-            _export("AubsAccordionCustomElement", AubsAccordionCustomElement = (_dec = inject(BindingEngine), _dec2 = children('aubs-accordion-group'), _dec(_class = (_class2 = function () {
+            _export("AubsAccordionCustomElement", AubsAccordionCustomElement = (_dec = inject(BindingEngine), _dec2 = useView(PLATFORM.moduleName('./aubs-accordion.html')), _dec3 = children('aubs-accordion-group'), _dec(_class = _dec2(_class = (_class2 = function () {
                 function AubsAccordionCustomElement(bindingEngine) {
                     _classCallCheck(this, AubsAccordionCustomElement);
 
@@ -136,12 +139,12 @@ System.register(["aurelia-framework", "../utils/bootstrap-options"], function (_
                 initializer: function initializer() {
                     return bootstrapOptions.accordionCloseOthers;
                 }
-            }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "groups", [_dec2], {
+            }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "groups", [_dec3], {
                 enumerable: true,
                 initializer: function initializer() {
                     return [];
                 }
-            })), _class2)) || _class));
+            })), _class2)) || _class) || _class));
 
             _export("AubsAccordionCustomElement", AubsAccordionCustomElement);
         }

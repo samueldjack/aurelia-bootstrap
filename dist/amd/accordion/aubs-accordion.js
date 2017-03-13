@@ -1,4 +1,4 @@
-define(["exports", "aurelia-framework", "../utils/bootstrap-options"], function (exports, _aureliaFramework, _bootstrapOptions) {
+define(["exports", "aurelia-pal", "aurelia-framework", "../utils/bootstrap-options"], function (exports, _aureliaPal, _aureliaFramework, _bootstrapOptions) {
     "use strict";
 
     Object.defineProperty(exports, "__esModule", {
@@ -55,9 +55,9 @@ define(["exports", "aurelia-framework", "../utils/bootstrap-options"], function 
         throw new Error('Decorating class property failed. Please ensure that transform-class-properties is enabled.');
     }
 
-    var _dec, _dec2, _class, _desc, _value, _class2, _descriptor, _descriptor2;
+    var _dec, _dec2, _dec3, _class, _desc, _value, _class2, _descriptor, _descriptor2;
 
-    var AubsAccordionCustomElement = exports.AubsAccordionCustomElement = (_dec = (0, _aureliaFramework.inject)(_aureliaFramework.BindingEngine), _dec2 = (0, _aureliaFramework.children)('aubs-accordion-group'), _dec(_class = (_class2 = function () {
+    var AubsAccordionCustomElement = exports.AubsAccordionCustomElement = (_dec = (0, _aureliaFramework.inject)(_aureliaFramework.BindingEngine), _dec2 = (0, _aureliaFramework.useView)(_aureliaPal.PLATFORM.moduleName('./aubs-accordion.html')), _dec3 = (0, _aureliaFramework.children)('aubs-accordion-group'), _dec(_class = _dec2(_class = (_class2 = function () {
         function AubsAccordionCustomElement(bindingEngine) {
             _classCallCheck(this, AubsAccordionCustomElement);
 
@@ -129,10 +129,10 @@ define(["exports", "aurelia-framework", "../utils/bootstrap-options"], function 
         initializer: function initializer() {
             return _bootstrapOptions.bootstrapOptions.accordionCloseOthers;
         }
-    }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "groups", [_dec2], {
+    }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "groups", [_dec3], {
         enumerable: true,
         initializer: function initializer() {
             return [];
         }
-    })), _class2)) || _class);
+    })), _class2)) || _class) || _class);
 });

@@ -1,7 +1,9 @@
-import {children, bindable, BindingEngine, inject} from "aurelia-framework";
+import { PLATFORM } from "aurelia-pal";
+import {children, bindable, BindingEngine, inject, useView} from "aurelia-framework";
 import {bootstrapOptions} from "../utils/bootstrap-options";
 
 @inject(BindingEngine)
+@useView(PLATFORM.moduleName('./aubs-accordion.html'))
 export class AubsAccordionCustomElement {
 
     @bindable closeOthers = bootstrapOptions.accordionCloseOthers;

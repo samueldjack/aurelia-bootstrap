@@ -1,6 +1,8 @@
-import {children, bindable, bindingMode} from "aurelia-framework";
+import { PLATFORM } from "aurelia-pal";
+import {children, bindable, bindingMode, useView} from "aurelia-framework";
 import {bootstrapOptions} from "../utils/bootstrap-options";
 
+@useView("./aubs-tabset.html")
 @children({ name: "tabs", selector: "aubs-tab" })
 export class AubsTabsetCustomElement {
     @bindable type = bootstrapOptions.tabsetType;
