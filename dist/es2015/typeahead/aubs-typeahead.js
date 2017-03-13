@@ -47,7 +47,7 @@ import { PLATFORM } from "aurelia-pal";
 import { inject, bindable, bindingMode, observable, BindingEngine, useView } from 'aurelia-framework';
 import { bootstrapOptions } from "../utils/bootstrap-options";
 
-export let AubsTypeaheadCustomElement = (_dec = useView("./aubs-typeahead.html"), _dec2 = inject(BindingEngine), _dec3 = bindable({ defaultBindingMode: bindingMode.twoWay }), _dec(_class = _dec2(_class = (_class2 = class AubsTypeaheadCustomElement {
+export let AubsTypeaheadCustomElement = (_dec = useView(PLATFORM.moduleName("./aubs-typeahead.html")), _dec2 = inject(BindingEngine), _dec3 = bindable({ defaultBindingMode: bindingMode.twoWay }), _dec(_class = _dec2(_class = (_class2 = class AubsTypeaheadCustomElement {
 
     constructor(bindingEngine) {
         _initDefineProp(this, "data", _descriptor, this);

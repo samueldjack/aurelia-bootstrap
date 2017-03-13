@@ -63,7 +63,7 @@ define(["exports", "aurelia-pal", "aurelia-framework", "../utils/bootstrap-optio
 
     var _dec, _dec2, _dec3, _class, _desc, _value, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11, _descriptor12, _descriptor13, _descriptor14, _descriptor15, _descriptor16, _descriptor17;
 
-    var AubsTypeaheadCustomElement = exports.AubsTypeaheadCustomElement = (_dec = (0, _aureliaFramework.useView)("./aubs-typeahead.html"), _dec2 = (0, _aureliaFramework.inject)(_aureliaFramework.BindingEngine), _dec3 = (0, _aureliaFramework.bindable)({ defaultBindingMode: _aureliaFramework.bindingMode.twoWay }), _dec(_class = _dec2(_class = (_class2 = function () {
+    var AubsTypeaheadCustomElement = exports.AubsTypeaheadCustomElement = (_dec = (0, _aureliaFramework.useView)(_aureliaPal.PLATFORM.moduleName("./aubs-typeahead.html")), _dec2 = (0, _aureliaFramework.inject)(_aureliaFramework.BindingEngine), _dec3 = (0, _aureliaFramework.bindable)({ defaultBindingMode: _aureliaFramework.bindingMode.twoWay }), _dec(_class = _dec2(_class = (_class2 = function () {
         function AubsTypeaheadCustomElement(bindingEngine) {
             var _this = this;
 

@@ -74,7 +74,7 @@ System.register(["aurelia-pal", "aurelia-framework", "../utils/bootstrap-options
                 return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
             };
 
-            _export("AubsTypeaheadCustomElement", AubsTypeaheadCustomElement = (_dec = useView("./aubs-typeahead.html"), _dec2 = inject(BindingEngine), _dec3 = bindable({ defaultBindingMode: bindingMode.twoWay }), _dec(_class = _dec2(_class = (_class2 = function () {
+            _export("AubsTypeaheadCustomElement", AubsTypeaheadCustomElement = (_dec = useView(PLATFORM.moduleName("./aubs-typeahead.html")), _dec2 = inject(BindingEngine), _dec3 = bindable({ defaultBindingMode: bindingMode.twoWay }), _dec(_class = _dec2(_class = (_class2 = function () {
                 function AubsTypeaheadCustomElement(bindingEngine) {
                     var _this = this;
 

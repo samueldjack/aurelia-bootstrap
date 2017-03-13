@@ -47,7 +47,7 @@ import { PLATFORM } from "aurelia-pal";
 import { children, bindable, bindingMode, useView } from "aurelia-framework";
 import { bootstrapOptions } from "../utils/bootstrap-options";
 
-export let AubsTabsetCustomElement = (_dec = useView("./aubs-tabset.html"), _dec2 = children({ name: "tabs", selector: "aubs-tab" }), _dec3 = bindable({ defaultBindingMode: bindingMode.twoWay }), _dec(_class = _dec2(_class = (_class2 = class AubsTabsetCustomElement {
+export let AubsTabsetCustomElement = (_dec = useView(PLATFORM.moduleName("./aubs-tabset.html")), _dec2 = children({ name: "tabs", selector: "aubs-tab" }), _dec3 = bindable({ defaultBindingMode: bindingMode.twoWay }), _dec(_class = _dec2(_class = (_class2 = class AubsTabsetCustomElement {
     constructor() {
         _initDefineProp(this, "type", _descriptor, this);
 

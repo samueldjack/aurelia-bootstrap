@@ -67,7 +67,7 @@ System.register(["aurelia-pal", "aurelia-framework", "./aubs-tabset", "velocity-
             velocity = _velocityAnimate.default;
         }],
         execute: function () {
-            _export("AubsTabCustomElement", AubsTabCustomElement = (_dec = useView("./aubs-tab.html"), _dec2 = inject(AubsTabsetCustomElement, Element), _dec(_class = _dec2(_class = (_class2 = function () {
+            _export("AubsTabCustomElement", AubsTabCustomElement = (_dec = useView(PLATFORM.moduleName("./aubs-tab.html")), _dec2 = inject(AubsTabsetCustomElement, Element), _dec(_class = _dec2(_class = (_class2 = function () {
                 function AubsTabCustomElement(tabset, element) {
                     _classCallCheck(this, AubsTabCustomElement);
 

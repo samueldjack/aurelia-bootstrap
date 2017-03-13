@@ -66,7 +66,7 @@ System.register(["aurelia-pal", "aurelia-framework", "../utils/bootstrap-options
             bootstrapOptions = _utilsBootstrapOptions.bootstrapOptions;
         }],
         execute: function () {
-            _export("AubsTabsetCustomElement", AubsTabsetCustomElement = (_dec = useView("./aubs-tabset.html"), _dec2 = children({ name: "tabs", selector: "aubs-tab" }), _dec3 = bindable({ defaultBindingMode: bindingMode.twoWay }), _dec(_class = _dec2(_class = (_class2 = function () {
+            _export("AubsTabsetCustomElement", AubsTabsetCustomElement = (_dec = useView(PLATFORM.moduleName("./aubs-tabset.html")), _dec2 = children({ name: "tabs", selector: "aubs-tab" }), _dec3 = bindable({ defaultBindingMode: bindingMode.twoWay }), _dec(_class = _dec2(_class = (_class2 = function () {
                 function AubsTabsetCustomElement() {
                     _classCallCheck(this, AubsTabsetCustomElement);
 

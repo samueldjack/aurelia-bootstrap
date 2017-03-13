@@ -65,7 +65,7 @@ define(["exports", "aurelia-pal", "aurelia-framework", "./aubs-tabset", "velocit
 
     var _dec, _dec2, _class, _desc, _value, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4;
 
-    var AubsTabCustomElement = exports.AubsTabCustomElement = (_dec = (0, _aureliaFramework.useView)("./aubs-tab.html"), _dec2 = (0, _aureliaFramework.inject)(_aubsTabset.AubsTabsetCustomElement, Element), _dec(_class = _dec2(_class = (_class2 = function () {
+    var AubsTabCustomElement = exports.AubsTabCustomElement = (_dec = (0, _aureliaFramework.useView)(_aureliaPal.PLATFORM.moduleName("./aubs-tab.html")), _dec2 = (0, _aureliaFramework.inject)(_aubsTabset.AubsTabsetCustomElement, Element), _dec(_class = _dec2(_class = (_class2 = function () {
         function AubsTabCustomElement(tabset, element) {
             _classCallCheck(this, AubsTabCustomElement);
 

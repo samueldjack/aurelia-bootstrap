@@ -58,7 +58,7 @@ function _initializerWarningHelper(descriptor, context) {
     throw new Error('Decorating class property failed. Please ensure that transform-class-properties is enabled.');
 }
 
-var AubsTabsetCustomElement = exports.AubsTabsetCustomElement = (_dec = (0, _aureliaFramework.useView)("./aubs-tabset.html"), _dec2 = (0, _aureliaFramework.children)({ name: "tabs", selector: "aubs-tab" }), _dec3 = (0, _aureliaFramework.bindable)({ defaultBindingMode: _aureliaFramework.bindingMode.twoWay }), _dec(_class = _dec2(_class = (_class2 = function () {
+var AubsTabsetCustomElement = exports.AubsTabsetCustomElement = (_dec = (0, _aureliaFramework.useView)(_aureliaPal.PLATFORM.moduleName("./aubs-tabset.html")), _dec2 = (0, _aureliaFramework.children)({ name: "tabs", selector: "aubs-tab" }), _dec3 = (0, _aureliaFramework.bindable)({ defaultBindingMode: _aureliaFramework.bindingMode.twoWay }), _dec(_class = _dec2(_class = (_class2 = function () {
     function AubsTabsetCustomElement() {
         _classCallCheck(this, AubsTabsetCustomElement);
 

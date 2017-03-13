@@ -48,7 +48,7 @@ import { bindable, inject, useView } from "aurelia-framework";
 import { AubsTabsetCustomElement } from "./aubs-tabset";
 import velocity from 'velocity-animate';
 
-export let AubsTabCustomElement = (_dec = useView("./aubs-tab.html"), _dec2 = inject(AubsTabsetCustomElement, Element), _dec(_class = _dec2(_class = (_class2 = class AubsTabCustomElement {
+export let AubsTabCustomElement = (_dec = useView(PLATFORM.moduleName("./aubs-tab.html")), _dec2 = inject(AubsTabsetCustomElement, Element), _dec(_class = _dec2(_class = (_class2 = class AubsTabCustomElement {
 
     constructor(tabset, element) {
         _initDefineProp(this, "header", _descriptor, this);

@@ -57,7 +57,7 @@ define(["exports", "aurelia-pal", "aurelia-framework", "../utils/bootstrap-optio
 
     var _dec, _dec2, _dec3, _class, _desc, _value, _class2, _descriptor, _descriptor2, _descriptor3;
 
-    var AubsTabsetCustomElement = exports.AubsTabsetCustomElement = (_dec = (0, _aureliaFramework.useView)("./aubs-tabset.html"), _dec2 = (0, _aureliaFramework.children)({ name: "tabs", selector: "aubs-tab" }), _dec3 = (0, _aureliaFramework.bindable)({ defaultBindingMode: _aureliaFramework.bindingMode.twoWay }), _dec(_class = _dec2(_class = (_class2 = function () {
+    var AubsTabsetCustomElement = exports.AubsTabsetCustomElement = (_dec = (0, _aureliaFramework.useView)(_aureliaPal.PLATFORM.moduleName("./aubs-tabset.html")), _dec2 = (0, _aureliaFramework.children)({ name: "tabs", selector: "aubs-tab" }), _dec3 = (0, _aureliaFramework.bindable)({ defaultBindingMode: _aureliaFramework.bindingMode.twoWay }), _dec(_class = _dec2(_class = (_class2 = function () {
         function AubsTabsetCustomElement() {
             _classCallCheck(this, AubsTabsetCustomElement);
 

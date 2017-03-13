@@ -2,7 +2,7 @@ import { PLATFORM } from "aurelia-pal";
 import {inject, bindable, bindingMode, observable, BindingEngine, useView} from 'aurelia-framework';
 import {bootstrapOptions} from "../utils/bootstrap-options";
 
-@useView("./aubs-typeahead.html")
+@useView(PLATFORM.moduleName("./aubs-typeahead.html"))
 @inject(BindingEngine)
 export class AubsTypeaheadCustomElement {
     @bindable data;
