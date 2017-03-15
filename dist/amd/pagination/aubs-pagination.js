@@ -57,7 +57,7 @@ define(["exports", "aurelia-pal", "aurelia-framework", "../utils/bootstrap-optio
 
     var _dec, _dec2, _class, _desc, _value, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10, _descriptor11;
 
-    var AubsPaginationCustomElement = exports.AubsPaginationCustomElement = (_dec = (0, _aureliaFramework.useView)(_aureliaPal.PLATFORM.moduleName("./aubs-pagination")), _dec2 = (0, _aureliaFramework.bindable)({ defaultBindingMode: _aureliaFramework.bindingMode.twoWay }), _dec(_class = (_class2 = function () {
+    var AubsPaginationCustomElement = exports.AubsPaginationCustomElement = (_dec = (0, _aureliaFramework.useView)(_aureliaPal.PLATFORM.moduleName("./aubs-pagination.html")), _dec2 = (0, _aureliaFramework.bindable)({ defaultBindingMode: _aureliaFramework.bindingMode.twoWay }), _dec(_class = (_class2 = function () {
         function AubsPaginationCustomElement() {
             _classCallCheck(this, AubsPaginationCustomElement);
 

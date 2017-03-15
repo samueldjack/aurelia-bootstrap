@@ -47,7 +47,7 @@ import { PLATFORM } from "aurelia-pal";
 import { bindable, bindingMode, useView } from "aurelia-framework";
 import { bootstrapOptions } from "../utils/bootstrap-options";
 
-export let AubsPaginationCustomElement = (_dec = useView(PLATFORM.moduleName("./aubs-pagination")), _dec2 = bindable({ defaultBindingMode: bindingMode.twoWay }), _dec(_class = (_class2 = class AubsPaginationCustomElement {
+export let AubsPaginationCustomElement = (_dec = useView(PLATFORM.moduleName("./aubs-pagination.html")), _dec2 = bindable({ defaultBindingMode: bindingMode.twoWay }), _dec(_class = (_class2 = class AubsPaginationCustomElement {
     constructor() {
         _initDefineProp(this, "currentPage", _descriptor, this);
 

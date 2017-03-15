@@ -65,7 +65,7 @@ System.register(["aurelia-pal", "aurelia-framework", "../utils/bootstrap-options
             bootstrapOptions = _utilsBootstrapOptions.bootstrapOptions;
         }],
         execute: function () {
-            _export("AubsPaginationCustomElement", AubsPaginationCustomElement = (_dec = useView(PLATFORM.moduleName("./aubs-pagination")), _dec2 = bindable({ defaultBindingMode: bindingMode.twoWay }), _dec(_class = (_class2 = function () {
+            _export("AubsPaginationCustomElement", AubsPaginationCustomElement = (_dec = useView(PLATFORM.moduleName("./aubs-pagination.html")), _dec2 = bindable({ defaultBindingMode: bindingMode.twoWay }), _dec(_class = (_class2 = function () {
                 function AubsPaginationCustomElement() {
                     _classCallCheck(this, AubsPaginationCustomElement);
 
